@@ -21,6 +21,10 @@ import DownloadLinks from './components/DownloadLinks.vue'
 
 <DownloadLinks />
 
+<div class="pi-apps-link">
+  Also available from <a href="https://pi-apps.io/" target="_blank" rel="noreferrer">Pi-Apps</a>.
+</div>
+
 <div class="source-link">
   Want to build from source? Check out the <a href="https://github.com/franciscoBSalgueiro/en-croissant" target="_blank" rel="noreferrer">GitHub repository</a>.
 </div>
@@ -48,12 +52,19 @@ h3 {
   margin-top: 0;
 }
 
-.source-link {
+.pi-apps-link {
   text-align: center;
   margin-top: 2rem;
   color: var(--vp-c-text-2);
   padding-top: 2rem;
   border-top: 1px solid var(--vp-c-divider);
+}
+
+.source-link {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--vp-c-text-2);
+  padding-top: 0.5rem;
 }
 
 a {
