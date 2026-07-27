@@ -13,18 +13,17 @@ const linuxFormats = [
   { name: ".rpm", url: `${baseUrl}/v${version}/en-croissant-${version}-1.x86_64.rpm` },
 ];
 
+const macFormats = [
+  { name: "Apple Silicon", url: `${baseUrl}/v${version}/en-croissant_${version}_aarch64.dmg` },
+  { name: "Intel", url: `${baseUrl}/v${version}/en-croissant_${version}_x64.dmg` },
+];
+
 const links = ref([
   {
     name: "Windows",
     url: `${baseUrl}/v${version}/en-croissant_${version}_x64-setup.exe`,
     icon: Windows,
     id: "windows"
-  },
-  {
-    name: "MacOS",
-    url: `${baseUrl}/v${version}/en-croissant_${version}_x64.dmg`,
-    icon: MacOS,
-    id: "macos"
   },
 ]);
 </script>
@@ -49,6 +48,17 @@ const links = ref([
         <span :class="$style.cta">Download</span>
       </div>
     </a>
+    <div :class="$style.card">
+      <MacOS :class="$style.icon" />
+      <div :class="$style.content">
+        <h3 :class="$style.title">MacOS</h3>
+        <div :class="$style.formatBtns">
+          <a v-for="format in macFormats" :key="format.name" :href="format.url" :class="$style.formatBtn">
+            {{ format.name }}
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style module>
