@@ -1,69 +1,69 @@
 [
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "windows",
 		"bmi2": true,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-windows-x86-64-avx2.zip",
-		"path": "stockfish/stockfish-windows-x86-64-avx2.exe",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-windows-x86-64-universal.zip",
+		"path": "stockfish/stockfish-windows-x86-64-universal.exe",
 		"elo": 3635,
-		"downloadSize": 65412642
+		"downloadSize": 81431614
 	},
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "windows",
 		"bmi2": false,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-windows-x86-64-sse41-popcnt.zip",
-		"path": "stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-windows-x86-64-universal.zip",
+		"path": "stockfish/stockfish-windows-x86-64-universal.exe",
 		"elo": 3635,
-		"downloadSize": 65413257
+		"downloadSize": 81431614
 	},
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "macos",
 		"bmi2": true,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-macos-x86-64-sse41-popcnt.tar",
-		"path": "stockfish/stockfish-macos-x86-64-sse41-popcnt",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-macos-universal.tar.gz",
+		"path": "stockfish/stockfish-macos-universal",
 		"elo": 3635,
-		"downloadSize": 80081408
+		"downloadSize": 82323876
 	},
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "macos",
 		"bmi2": false,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-macos-x86-64-sse41-popcnt.tar",
-		"path": "stockfish/stockfish-macos-x86-64-sse41-popcnt",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-macos-universal.tar.gz",
+		"path": "stockfish/stockfish-macos-universal",
 		"elo": 3635,
-		"downloadSize": 80081408
+		"downloadSize": 82323876
 	},
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "linux",
 		"bmi2": true,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-ubuntu-x86-64-avx2.tar",
-		"path": "stockfish/stockfish-ubuntu-x86-64-avx2",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-linux-x86-64-universal.tar.gz",
+		"path": "stockfish/stockfish-linux-x86-64-universal",
 		"elo": 3635,
-		"downloadSize": 79953920
+		"downloadSize": 81388977
 	},
 	{
 		"name": "Stockfish",
-		"version": "18",
+		"version": "19",
 		"os": "linux",
 		"bmi2": false,
 		"image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NewLogoSF.png",
-		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-ubuntu-x86-64-sse41-popcnt.tar",
-		"path": "stockfish/stockfish-ubuntu-x86-64-sse41-popcnt",
+		"downloadLink": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-linux-x86-64-universal.tar.gz",
+		"path": "stockfish/stockfish-linux-x86-64-universal",
 		"elo": 3635,
-		"downloadSize": 79953920
+		"downloadSize": 81388977
 	},
 	{
 		"name": "RubiChess",
