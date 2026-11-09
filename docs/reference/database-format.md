@@ -1,13 +1,15 @@
 # Database format
 
-Databases are stored in a single file, using [SQLite](https://www.sqlite.org/index.html). This is a very common general-purpose database format, and there are many tools available to work with it. This makes working with the database outside of En Croissant very easy, either programmatically or with existing SQLite tools like [DB Browser for SQLite](https://sqlitebrowser.org/).
+Starting with En Croissant 0.16.0, game databases use [DuckDB](https://duckdb.org/) and are stored as `.duckdb` files. You can query game metadata such as player names, ratings, and results directly with SQL.
 
-## Schemas
+## Upgrading a SQLite database
 
-The schema for the tables used in the database can be found [here](https://github.com/franciscoBSalgueiro/en-croissant/blob/master/src-tauri/src/db/create.sql).
+On the **Databases** page, select your existing `.db3` game database and click **Convert database**. En Croissant creates a separate `.duckdb` file alongside the original.
 
-## Move Encoding
+For the Lichess puzzle collection, download the DuckDB edition from the **Puzzles** tab.
 
-Storing the moves in a human-readable format would take a lot of space, so they are encoded in a binary format.
+## Schema and move encoding
 
-Each move is encoded as a single byte, representing the index of the move in the list of legal moves in the position. The move list is generated with [Shakmaty](https://github.com/niklasf/shakmaty) and then the encoded number is the index of the move in that list.
+The [game database schema](https://github.com/franciscoBSalgueiro/en-croissant/blob/29d410ebb230c3d2fdad5b4fe38656313e82f0f9/src-tauri/src/db/init-database.sql) defines the `games` table. Moves and variations use [AIX](https://github.com/franciscoBSalgueiro/aix) compression and are stored in the `movedata` column. Comments and annotation symbols are stored separately in the `annotations` column.
+
+To read the moves and annotations in another chess program, use **Export to PGN** from the database page.
