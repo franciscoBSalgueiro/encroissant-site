@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import Linux from "./Linux.vue";
 import Windows from "./Windows.vue";
 import MacOS from "./MacOS.vue";
@@ -7,48 +6,57 @@ import { version } from "../global.ts";
 
 const baseUrl = "https://github.com/franciscoBSalgueiro/en-croissant/releases/download";
 
-const linuxFormats = [
-  { name: "AppImage", url: `${baseUrl}/v${version}/en-croissant_${version}_amd64.AppImage` },
-  { name: ".deb", url: `${baseUrl}/v${version}/en-croissant_${version}_amd64.deb` },
-  { name: ".rpm", url: `${baseUrl}/v${version}/en-croissant-${version}-1.x86_64.rpm` },
-];
-
-const links = ref([
+const cards = [
   {
+    id: "linux",
+    name: "Linux",
+    icon: Linux,
+    formats: [
+      { name: "AppImage", url: `${baseUrl}/v${version}/en-croissant_${version}_amd64.AppImage` },
+      { name: ".deb", url: `${baseUrl}/v${version}/en-croissant_${version}_amd64.deb` },
+      { name: ".rpm", url: `${baseUrl}/v${version}/en-croissant-${version}-1.x86_64.rpm` },
+    ],
+  },
+  {
+    id: "windows",
     name: "Windows",
-    url: `${baseUrl}/v${version}/en-croissant_${version}_x64-setup.exe`,
     icon: Windows,
-    id: "windows"
+    url: `${baseUrl}/v${version}/en-croissant_${version}_x64-setup.exe`,
   },
   {
+    id: "macos",
     name: "MacOS",
-    url: `${baseUrl}/v${version}/en-croissant_${version}_x64.dmg`,
     icon: MacOS,
-    id: "macos"
+    formats: [
+      { name: "Apple Silicon", url: `${baseUrl}/v${version}/en-croissant_${version}_aarch64.dmg` },
+      { name: "Intel", url: `${baseUrl}/v${version}/en-croissant_${version}_x64.dmg` },
+    ],
   },
-]);
+];
 </script>
 
 <template>
   <div :class="$style.grid">
-    <div :class="$style.card">
-      <Linux :class="$style.icon" />
-      <div :class="$style.content">
-        <h3 :class="$style.title">Linux</h3>
-        <div :class="$style.formatBtns">
-          <a v-for="format in linuxFormats" :key="format.name" :href="format.url" :class="$style.formatBtn">
-            {{ format.name }}
-          </a>
+    <template v-for="card in cards" :key="card.id">
+      <div v-if="card.formats" :class="$style.card">
+        <component :is="card.icon" :class="$style.icon" />
+        <div :class="$style.content">
+          <h3 :class="$style.title">{{ card.name }}</h3>
+          <div :class="$style.formatBtns">
+            <a v-for="format in card.formats" :key="format.name" :href="format.url" :class="$style.formatBtn">
+              {{ format.name }}
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <a v-for="link in links" :key="link.name" :href="link.url" :class="$style.card">
-      <component :is="link.icon" :class="$style.icon" />
-      <div :class="$style.content">
-        <h3 :class="$style.title">{{ link.name }}</h3>
-        <span :class="$style.cta">Download</span>
-      </div>
-    </a>
+      <a v-else :href="card.url" :class="$style.card">
+        <component :is="card.icon" :class="$style.icon" />
+        <div :class="$style.content">
+          <h3 :class="$style.title">{{ card.name }}</h3>
+          <span :class="$style.cta">Download</span>
+        </div>
+      </a>
+    </template>
   </div>
 </template>
 <style module>
