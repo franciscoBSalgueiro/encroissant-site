@@ -3,7 +3,7 @@
 		"title": "Lichess Puzzles 2026",
 		"description": "A collection of all puzzles from Lichess.org",
 		"puzzleCount": 5751400,
-		"storageSize": 1172987904,
-		"downloadLink": "https://db.encroissant.org/Lichess Puzzles 2026.db3"
+		"storageSize": 324546560,
+		"downloadLink": "https://db.encroissant.org/Lichess Puzzles 2026.duckdb"
 	}
 ]
