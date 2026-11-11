@@ -43,3 +43,14 @@ When you first launch En Croissant, the main dashboard will be displayed. Here a
 1.  **Configure Engines**: Go to the Engines page to download or add your favorite chess engines (like Stockfish).
 2. **Add Reference Database**: Go to the Databases page to download a database to use as a reference for your analysis.
 3.  **Explore Features**: Check out the Analysis board, play a game against the computer or start practicing tactics with puzzles.
+
+You can also watch the following video for a walkthrough of some of the features in En Croissant:
+
+<iframe
+  src="https://www.youtube-nocookie.com/embed/vgFIbB6CGAg"
+  title="En Croissant engine setup walkthrough"
+  style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0"
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
