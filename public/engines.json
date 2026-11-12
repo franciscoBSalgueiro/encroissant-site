@@ -251,5 +251,71 @@
 		"path": "lc0-v0.30.0-windows-gpu-nvidia-cuda/lc0.exe",
 		"elo": 3440,
 		"downloadSize": 251872888
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "windows",
+		"bmi2": true,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-windows-x86_64-avx2.zip",
+		"path": "arhanpassant/arhanpassant-windows-x86_64-avx2.exe",
+		"elo": 3500,
+		"downloadSize": 4386799
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "windows",
+		"bmi2": false,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-windows-x86_64.zip",
+		"path": "arhanpassant/arhanpassant-windows-x86_64.exe",
+		"elo": 3500,
+		"downloadSize": 4376372
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "macos",
+		"bmi2": true,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-macos-universal.tar.gz",
+		"path": "arhanpassant/arhanpassant-macos-universal",
+		"elo": 3500,
+		"downloadSize": 8947118
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "macos",
+		"bmi2": false,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-macos-universal.tar.gz",
+		"path": "arhanpassant/arhanpassant-macos-universal",
+		"elo": 3500,
+		"downloadSize": 8947118
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "linux",
+		"bmi2": true,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-linux-x86_64-avx2.tar.gz",
+		"path": "arhanpassant/arhanpassant-linux-x86_64-avx2",
+		"elo": 3500,
+		"downloadSize": 4491915
+	},
+	{
+		"name": "ArhanPassant",
+		"version": "0.13.0",
+		"os": "linux",
+		"bmi2": false,
+		"image": "https://arhanpassant.com/logo.svg",
+		"downloadLink": "https://github.com/arhancanli/arhanpassant/releases/download/v0.13.0/arhanpassant-linux-x86_64.tar.gz",
+		"path": "arhanpassant/arhanpassant-linux-x86_64",
+		"elo": 3500,
+		"downloadSize": 4481829
 	}
 ]
